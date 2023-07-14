@@ -1,5 +1,5 @@
-# Debian-titus
-Debian customizations from Chris Titus Tech
+# Debian-D4ny
+Debian customizations from D4ny
  
 ## Requirements
 _This install changes Debian to the SID (Dev) Branch_
@@ -12,8 +12,8 @@ Use the following Debian ISO as the base <https://cdimage.debian.org/cdimage/wee
 ### To install:
 
 ```
-git clone https://github.com/ChrisTitusTech/debian-titus
-cd debian-titus
+git clone https://github.com/D4nYCS/debian-d4ny/
+cd debian-d4ny
 sudo ./install.sh
 ```
 
