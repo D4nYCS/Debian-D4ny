@@ -63,7 +63,7 @@ nala install apt-transport-https curl wget gpg -y
 rm -fv /etc/apt/sources.list.d/thorium.list
 wget --no-hsts -P /etc/apt/sources.list.d/ http://dl.thorium.rocks/debian/dists/stable/thorium.list
 nala update
-nala install thorium-browser
+nala install thorium-browser -y
 
 #Install Visual Studio Code
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -71,10 +71,10 @@ install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packa
 echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | tee /etc/apt/sources.list.d/vscode.list > /dev/null
 rm -f packages.microsoft.gpg
 nala update
-nala install code
+nala install code -y
 
 #Install Ssh Manager and Remotedesktop
-nala install remmina
+nala install remmina -y
 
 # Enable graphical login and change target from CLI to GUI
 systemctl enable lightdm
